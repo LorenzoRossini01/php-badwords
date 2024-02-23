@@ -14,6 +14,45 @@
     />
   </head>
   <body>
+    <div class="container mt-5">
+      <form
+        action="http://localhost/php-badwords/result.php"
+        method="GET"
+        class="row gap-2"
+      >
+        <div class="form-floating">
+          <input
+            type="text"
+            name="censored_word"
+            id="censored-word"
+            class="form-control"
+            placeholder="censored word"
+          />
+          <label for="censored-word" class="form-label"
+            >Scrivi una parola da censurare</label
+          >
+        </div>
+        <div class="form-floating">
+          <textarea
+            name="base-parag"
+            id="base-parag"
+            cols="30"
+            rows="10"
+            class="form-control"
+            placeholder="base paragraph"
+            style="height: 100px"
+          ></textarea>
+          <label for="base-parag">Scrivi un paragrafo</label>
+        </div>
+
+        <div class="col-12">
+          <button type="submit" class="btn btn-primary w-100">
+            Invia dati
+          </button>
+        </div>
+      </form>
+    </div>
+
     <!-- js bootstrap  -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
