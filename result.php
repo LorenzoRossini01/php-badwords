@@ -6,4 +6,10 @@ $paragraph = $_GET["base-parag"];
 var_dump($censored);
 var_dump($paragraph);
 
+// lunghezza paragrafo
+$p_length= strlen($paragraph);
+// var_dump($p_length);
+
+
+
 ?>
